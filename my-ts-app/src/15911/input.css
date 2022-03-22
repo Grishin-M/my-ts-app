@@ -1,0 +1,27 @@
+.input {
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+}
+#inputAddTodo {
+  width: 66%;
+  height: 50px;
+  padding-left: 12px;
+  border-radius: 12px;
+  border: none;
+  box-sizing: border-box;
+}
+#inputAddTodo:focus {
+  outline: none;
+  border: 2px solid blue;
+  box-sizing: border-box;
+}
+#btnAddTodo {
+  width: 120px;
+  height: 50px;
+  background: blue;
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  cursor: pointer;
+}
