@@ -5,7 +5,6 @@ import './input.css'
 
 const Input = () => {
   const dispatch = useDispatch()
-  
   const [input, setInput] = useState('')
    
   const addTodo = () => {
