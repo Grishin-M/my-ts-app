@@ -15,8 +15,8 @@ const TodoItem:FC<TodoItemProp>  = ({name, done, id}) => {
   const handleCheck = () => {
     dispatch(setCheck(id))
   }
+
   return (
-    
     <div className='todoItem'>
       <input type="checkbox" onChange={handleCheck} className="checkbox"></input>
       <p className={done ? 'todoItem--done' : ''}>{name}</p>

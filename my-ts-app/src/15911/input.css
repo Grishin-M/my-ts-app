@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-around;
 }
-#inputAddTodo {
+.inputAddTodo {
   width: 66%;
   height: 50px;
   padding-left: 12px;
@@ -11,12 +11,12 @@
   border: none;
   box-sizing: border-box;
 }
-#inputAddTodo:focus {
+.inputAddTodo:focus {
   outline: none;
   border: 2px solid blue;
   box-sizing: border-box;
 }
-#btnAddTodo {
+.btnAddTodo {
   width: 120px;
   height: 50px;
   background: blue;

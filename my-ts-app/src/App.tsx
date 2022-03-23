@@ -6,21 +6,21 @@ import { selectTodoList } from './features/todo/todoSlice';
 
 function App() {
   const todoList = useSelector(selectTodoList)
+
   return (
     <div className='wrapper'>
       <div className='wrapp_container'>
         <div className='wrapp_todoContainer'>
           {
             todoList.map((item) => {
-              return (
-                <TodoItem
+            return (
+              <TodoItem
                 name={item.name}
                 done={item.done}
                 id={item.id}
                 key={item.id.toString()}
               />
-              )
-            })
+            )})
           }
         </div>
         <Input />

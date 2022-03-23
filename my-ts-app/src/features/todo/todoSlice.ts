@@ -20,10 +20,10 @@ const todoSlice = createSlice({
     setCheck: (state, action) => {
       state.todoList.map((item) => {
         if(action.payload === item.id) {
-            if(item.done === true) {
-              item.done = false
-            } else {
+            if(item.done = !item.done) {
               item.done = true
+            } else {
+              item.done = false
             }
         }
       })

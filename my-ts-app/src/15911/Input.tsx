@@ -4,9 +4,10 @@ import { saveTodo } from "../features/todo/todoSlice";
 import './input.css'
 
 const Input = () => {
-  const [input, setInput] = useState('')
-  
   const dispatch = useDispatch()
+  
+  const [input, setInput] = useState('')
+   
   const addTodo = () => {
     dispatch(saveTodo({
       name: input,
@@ -21,8 +22,8 @@ const Input = () => {
 
   return (
     <div className="input">
-      <input id="inputAddTodo" type='text' value={input} onChange={updateInput} />
-      <button id="btnAddTodo" onClick={addTodo}>Добавить</button>
+      <input className="inputAddTodo" type='text' value={input} onChange={updateInput} />
+      <button className="btnAddTodo" onClick={addTodo}>Добавить</button>
     </div>
   )
 }
